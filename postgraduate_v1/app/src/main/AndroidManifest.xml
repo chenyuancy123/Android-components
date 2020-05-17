@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.postgraduate_v1">
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".utilityClass.ApplicationController"
+        android:allowBackup="true"
+        android:icon="@mipmap/yanyou"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WebViewActivity"
+            android:theme="@style/GuideTheme"></activity>
+        <activity
+            android:name=".Slapsh_Guide_Handle.Slapsh_Activity"
+            android:theme="@style/GuideTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Slapsh_Guide_Handle.Handle_Activity"
+            android:theme="@style/GuideTheme" />
+        <activity
+            android:name=".Slapsh_Guide_Handle.Guide_Activity"
+            android:theme="@style/GuideTheme" />
+        <activity
+            android:name=".personfragment_activity.Yimaibooks_Activity"
+            android:theme="@style/GuideTheme" />
+        <activity
+            android:name=".personfragment_activity.Yi_maibooks_Activity"
+            android:theme="@style/GuideTheme" />
+        <activity
+            android:name=".mainfragment_activity.PurchaseBooks_successActivity"
+            android:theme="@style/GuideTheme" />
+        <activity
+            android:name=".mainfragment_activity.BuyBooks_Activity"
+            android:theme="@style/GuideTheme" />
+        <activity
+            android:name=".personfragment_activity.AddadressActivity"
+            android:theme="@style/GuideTheme" />
+        <activity
+            android:name=".personfragment_activity.Shouhuo_addressActivity"
+            android:theme="@style/GuideTheme" />
+        <activity
+            android:name=".mainfragment_activity.Chongzhi_XuebiActivity"
+            android:theme="@style/GuideTheme" />
+        <activity
+            android:name=".personfragment_activity.SelfPurchase_BooksActivity"
+            android:theme="@style/GuideTheme" />
+        <activity
+            android:name=".personfragment_activity.SelfCreate_DynamicActivity"
+            android:theme="@style/GuideTheme" />
+        <activity
+            android:name=".rongyun_chat.ConversationActivity"
+            android:theme="@style/GuideTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="com.example.postgraduate_v1"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".rongyun_chat.HomeActivity"
+            android:theme="@style/GuideTheme" />
+        <activity
+            android:name=".rongyun_chat.Rongyun_chat_Activity"
+            android:theme="@style/GuideTheme" />
+        <activity
+            android:name=".mainfragment_activity.Chat_Activity"
+            android:theme="@style/GuideTheme" />
+        <activity
+            android:name=".mainfragment_activity.Wallet_Activity"
+            android:theme="@style/GuideTheme" />
+        <activity
+            android:name=".mainfragment_activity.Commodity_xiangxi_Activity"
+            android:theme="@style/GuideTheme" />
+        <activity
+            android:name=".mainfragment_activity.Addcommodity_Activity"
+            android:theme="@style/GuideTheme" />
+        <activity
+            android:name=".mainfragment_activity.ShopActivity"
+            android:theme="@style/GuideTheme" />
+        <activity
+            android:name=".DynamicEdit_Activity"
+            android:theme="@style/GuideTheme" />
+        <activity
+            android:name=".UserInfoEdit_Activity"
+            android:theme="@style/GuideTheme" />
+        <activity
+            android:name=".ChatActivity"
+            android:theme="@style/GuideTheme" />
+        <activity
+            android:name=".login_register.RegisterActivity"
+            android:theme="@style/AppTheme_yu" />
+        <activity
+            android:name=".login_register.LoginActivity"
+            android:theme="@style/AppTheme_yu"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/GuideTheme" />
+
+        <provider
+            android:name="cn.bmob.v3.util.BmobContentProvider"
+            android:authorities="com.example.postgraduate_v1.BmobContentProvider" />
+    </application>
+
+</manifest>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:background="@drawable/lunbo_biankuang"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/chatUserTopPicture"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <RelativeLayout
+        android:id="@+id/chat_adapter_Relative"
+        android:layout_alignTop="@id/chatUserTopPicture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/chatUserTopPicture"
+        android:layout_marginLeft="2dp">
+
+        <TextView
+            android:id="@+id/chatUsername"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="一研为定"
+            android:textColor="@color/colorBlue"
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/chatUsergrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019级"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/chatUserdegree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="硕士生"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="57dp">
+
+            <TextView
+                android:id="@+id/chatUserschool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="南京大学"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/chatUsermajor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="软件工程[085212]"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toRightOf="@id/chat_adapter_Relative"-->
+        <!--android:layout_marginLeft="2dp">-->
+
+        <!--<Button-->
+            <!--android:id="@+id/button_consult"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="咨询"/>-->
+    <!--</RelativeLayout>-->
+
+
+</RelativeLayout>

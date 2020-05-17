@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorBlue"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/back_commodity_detail_activity"
+            android:layout_width="0dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/back"/>
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="9"
+            android:gravity="center"
+            android:text="确认订单"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"/>
+        <!--<TextView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="0.8"-->
+        <!--android:layout_height="21dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginRight="10dp"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收货人："
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/order_username"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="shazi"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/order_telephone"
+                android:layout_marginLeft="100dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="213165165165156"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收货地址："
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/order_address"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="江苏省2132116"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorGrey"></View>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="1dp"
+            android:background="@drawable/home_search_text_background"
+            android:descendantFocusability="blocksDescendants">
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/order_picture"
+                    android:focusable="false"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/order_name"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:ellipsize="none"
+                    android:inputType="textMultiLine"
+                    android:maxLines="100"
+                    android:scrollHorizontally="false"
+                    android:text="南大软件学院史上最全842初试宝典（第五版）4.11开启预售一周（限50本，活动价169）"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:focusable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="￥ "
+                        android:textColor="@color/colorRed"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/order_price"
+                        android:focusable="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:text="199"
+                        android:textColor="@color/colorRed"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/home_search_text_background"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bu_order_book_purchase"
+            android:layout_marginLeft="250dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即购买"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

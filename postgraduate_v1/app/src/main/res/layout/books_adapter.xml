@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bookadapter_kuangzi"
+        android:orientation="vertical">
+
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="1dp"
+            android:descendantFocusability="blocksDescendants">
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/books_adapter_picture"
+                    android:focusable="false"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/books_adapter_name"
+                    android:focusable="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:ellipsize="none"
+                    android:inputType="textMultiLine"
+                    android:maxLines="100"
+                    android:scrollHorizontally="false"
+                    android:text="南大软件学院史上最全842初试宝典（第五版）4.11开启预售一周（限50本，活动价169）"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:focusable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="￥ "
+                        android:textColor="@color/colorRed"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/books_adapter_price"
+                        android:focusable="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:text="199"
+                        android:textColor="@color/colorRed"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey"></View>
+
+        <LinearLayout
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收货人："
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/books_adapter_username"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="shazi"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/books_adapter_telephone"
+                    android:layout_marginLeft="100dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="213165165165156"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收货地址："
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:id="@+id/books_adapter_address"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="江苏省2132116"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorGrey"></View>
+
+
+</LinearLayout>

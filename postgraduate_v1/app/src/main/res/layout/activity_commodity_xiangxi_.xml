@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorBlue"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/back_shop_activity"
+            android:layout_width="0dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/back"/>
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="9"
+            android:gravity="center"
+            android:text="实物详情"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"/>
+        <!--<TextView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="0.8"-->
+        <!--android:layout_height="21dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginRight="10dp"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:background="@drawable/home_search_text_background"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:layout_margin="5dp"
+                    android:id="@+id/book_Picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/home_search_text_background">
+
+                    <TextView
+
+                        android:id="@+id/book_Name"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="图书名字"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="20sp"/>
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey"></View>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_marginLeft="10dp"
+                        android:focusable="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="￥ "
+                        android:textColor="@color/colorRed"
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/book_Price"
+                        android:focusable="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:text="199"
+                        android:textColor="@color/colorRed"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@color/colorGrey"></View>
+                <TextView
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="图书详情"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/home_search_text_background">
+
+                    <TextView
+                        android:id="@+id/book_Describe"
+                        android:layout_margin="5dp"
+                        android:inputType="textMultiLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="数据结构是计算机存储、组织数据的方式。数据结构是指相互之间存在一种或多种特定关系的数据元素的集合。"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/home_search_text_background"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bu_book_purchase"
+                android:layout_marginLeft="250dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认订单"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorBlue"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/back_toChat_activity"
+            android:layout_width="0dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/back"/>
+        <TextView
+            android:id="@+id/tv_liantianbeizhu"
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="9"
+            android:gravity="center"
+            android:text="聊  天"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"/>
+        <!--<TextView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="0.8"-->
+        <!--android:layout_height="21dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginRight="10dp"/>-->
+
+    </LinearLayout>
+
+    <fragment
+        android:layout_marginTop="45dp"
+        android:id="@+id/conversation"
+        android:name="io.rong.imkit.fragment.ConversationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</RelativeLayout>

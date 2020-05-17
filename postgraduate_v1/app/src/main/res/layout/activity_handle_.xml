@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome4"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="130dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/yanyou1"/>
+
+
+    <!--<ImageView-->
+        <!--android:layout_marginTop="250dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@mipmap/hcurrentnews1"/>-->
+
+    <TextView
+        android:layout_marginTop="265dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="为你提供优质考研信息交流平台"
+        android:textSize="20sp"/>
+
+
+
+</LinearLayout>

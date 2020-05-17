@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/yanxun_image"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+
+    <TextView
+        android:id="@+id/yanxun_title"
+        android:layout_toRightOf="@+id/yanxun_image"
+        android:layout_alignTop="@+id/yanxun_image"
+        android:layout_marginTop="1dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="nihao!"
+        android:textColor="@color/colorBlack"/>
+
+    <RelativeLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/yanxun_image">
+
+        <TextView
+            android:id="@+id/yanxun_location"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorGrey" />
+        <TextView
+            android:layout_toRightOf="@+id/yanxun_location"
+            android:id="@+id/yanxun_time"
+            android:textColor="@color/colorGrey"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="真的吗?"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

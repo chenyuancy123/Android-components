@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/colorBlue"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/back_toWalletActivity"
+            android:layout_width="0dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.8"
+            android:background="@drawable/back"/>
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="9"
+            android:gravity="center"
+            android:text="充值学币"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"/>
+        <!--<TextView-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_weight="0.8"-->
+        <!--android:layout_height="21dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginRight="10dp"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="充值数额"
+            android:textSize="15sp"
+            android:textColor="@color/colorBlack"/>
+
+        <EditText
+            android:id="@+id/money_number"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请填写充值数值......"/>
+
+        <Button
+            android:id="@+id/confirm_money"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

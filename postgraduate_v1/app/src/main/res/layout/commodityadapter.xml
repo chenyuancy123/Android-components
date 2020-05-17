@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_margin="1dp"
+    android:background="@drawable/home_search_text_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/commotity_picture"
+            android:focusable="false"
+            android:layout_width="85dp"
+            android:layout_height="85dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="2dp"
+        android:layout_width="170dp"
+        android:layout_height="85dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/commotity_name"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ellipsize="none"
+            android:inputType="textMultiLine"
+            android:maxLines="100"
+            android:scrollHorizontally="false"
+            android:text="南大软件学院史上最全842初试宝典（第五版）4.11开启预售一周（限50本，活动价169）"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:focusable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="￥ "
+                android:textColor="@color/colorRed"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/commotity_price"
+                android:focusable="false"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="199"
+                android:textColor="@color/colorRed"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/bu_delete_commodity"
+        android:layout_marginLeft="5dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除"/>
+
+</LinearLayout>

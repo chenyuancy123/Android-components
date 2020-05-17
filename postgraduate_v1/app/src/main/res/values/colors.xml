@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorTouBlue">#259AFA</color>
+    //---------------底部导航栏的颜色---------------------
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlue">#0886EB</color>
+    //---------------底部导航栏的颜色---------------------
+    <color name="white">#F7F7F8</color>
+    <color name="colorGrey">#C5C5C5</color>
+    <color name="input_box_text">#898888</color>
+
+    <color name="colorBlack">#090808</color>
+    <color name="colorRed">#F30606</color>
+    <color name="colorRed1">#F53030</color>
+    <color name="colorYellow">#FFEB3B</color>
+</resources>
